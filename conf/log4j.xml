@@ -24,7 +24,7 @@
   </logger>
   <root>
     <priority value="ALL" />
-    <!-- <appender-ref ref="console" />-->
+    <appender-ref ref="console" />
     <appender-ref ref="SMSMessageProcessorAppender" />
   </root>
 </log4j:configuration>

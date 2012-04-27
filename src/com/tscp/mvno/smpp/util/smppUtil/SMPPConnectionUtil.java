@@ -76,6 +76,7 @@ public static String inputProperties = "client.properties";
     					
 		try {
 		    smppConnection = new Connection(tcpLink);   
+		    smppConnection.autoAckMessages(true);
 		    logger.info("SMPP Connection established"); //0-UNBOUND, 1-BINDING, 2-BOUND
 		}
 	    catch(Exception e ) {
